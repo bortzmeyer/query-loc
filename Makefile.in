@@ -5,7 +5,7 @@ LIBS=@LIBS@
 DESTDIR=@prefix@
 BINDIR=@prefix@/bin
 MANDIR=@prefix@/share/man/man1
-DISTRIB= README INSTALL ALGO USAGE ADDRESSES Makefile.in configure configure.in config.h.in install-sh loc.h loc.c query-loc.c loc_ntoa.c query-loc.1
+DISTRIB= README INSTALL ALGO USAGE ADDRESSES Makefile.in configure configure.in config.h.in install-sh loc.h loc.c query-loc.c loc_ntoa.c query-loc.1 reconf
 OBJS=query-loc.o loc.o @LOC_NTOA@
 VERSION=`grep VERSION loc.h | cut -d ' ' -f 3 | sed s/\"//g`
 
