@@ -3,5 +3,6 @@
 # $Id$
 
 autoreconf
-# We do not use automake but we need its install-sh file
-automake --add-missing
+# We do not use automake but we need its install-sh file. We do not 
+# care about the exit code.
+automake --add-missing && true
