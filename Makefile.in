@@ -4,7 +4,8 @@ CFLAGS=@CFLAGS@
 LIBS=@LIBS@
 DESTDIR=@prefix@
 BINDIR=@prefix@/bin
-DISTRIB= README INSTALL ALGO USAGE ADDRESSES Makefile.in configure configure.in config.h.in install-sh loc.h loc.c query-loc.c loc_ntoa.c
+MANDIR=@prefix@/share/man/man1
+DISTRIB= README INSTALL ALGO USAGE ADDRESSES Makefile.in configure configure.in config.h.in install-sh loc.h loc.c query-loc.c loc_ntoa.c query-loc.1
 OBJS=query-loc.o loc.o @LOC_NTOA@
 VERSION=`grep VERSION loc.h | cut -d ' ' -f 3 | sed s/\"//g`
 
@@ -22,6 +23,8 @@ clean:
 distclean: clean
 	rm -f config.h config.cache config.log config.status Makefile
 
+dist: distrib
+
 distrib: clean
 	./reconf
 	@(echo Query-Loc is version ${VERSION}; \
@@ -33,3 +36,7 @@ distrib: clean
 
 install:
 	@INSTALL@ -m 0755 query-loc $(BINDIR)
+	if [ ! -d $(MANDIR) ]; then \
+		mkdir $(MANDIR); \
+	fi
+	@INSTALL@ -m 0644 query-loc.1 $(MANDIR)

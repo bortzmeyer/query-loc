@@ -14,7 +14,7 @@ main (argc, argv)
   extern char *optarg;
   extern int optind;
 
-  short verbose;
+  short verbose = FALSE;
   char *host;
 
   char ch;

@@ -30,7 +30,7 @@ AC_TRY_LINK([#include <sys/types.h>
              union
              {
                 HEADER hdr;	
-                u_char buf[512];
+                u_char buf[4096]; /* With RFC 2671, otherwise 512 is enough */
              }
              response;
              char *domain;

@@ -342,6 +342,7 @@ int responseLen;		/* buffer length */
   struct in_addr addr;
 
   result = (char *) malloc (256);
+  message = (char *) malloc (256);
   /* 
    * Look up the records for the given domain name.
    * We expect the domain to be a fully qualified name, so
