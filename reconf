@@ -5,4 +5,4 @@
 autoreconf
 # We do not use automake but we need its install-sh file. We do not 
 # care about the exit code.
-automake --add-missing && true
+automake --add-missing || true
