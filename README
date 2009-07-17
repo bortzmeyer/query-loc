@@ -6,6 +6,11 @@
    You can find examples of networks wchich implement this scheme
    in the ADDRESSES file.
 
+   A web page to describe it is
+   <http://www.bortzmeyer.org/query-loc.html>. Its official home (for
+   downloading or if you want to submit patches or to become a
+   developer) is <http://github.com/bortzmeyer/query-loc/>.
+
    It is under the General Public Licence (GPL, which
    you can fetch from <http://www.gnu.org/copyleft/gpl.html>.
 
@@ -16,6 +21,6 @@
    <http://www.dtek.chalmers.se/~d3august/xt/>. Thanks to Roland
    Dirlewanger for extensive patching.
 
-$Id$
+
 
 
