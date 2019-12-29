@@ -1,26 +1,4 @@
    query-loc: a program to retrieve and display the location
    information in the DNS. 
 
-   It uses the algorithms described in
-   RFC 1876 (and RFC 1101 to get the network names).
-   You can find examples of networks wchich implement this scheme
-   in the ADDRESSES file.
-
-   A web page to describe it is
-   <http://www.bortzmeyer.org/query-loc.html>. Its official home (for
-   downloading or if you want to submit patches or to become a
-   developer) is <http://github.com/bortzmeyer/query-loc/>.
-
-   It is under the General Public Licence (GPL, which
-   you can fetch from <http://www.gnu.org/copyleft/gpl.html>.
-
-   Copyright Stéphane Bortzmeyer <bortzmeyer@sources.org>, 1998-2007.
-
-   Thanks to Paul Vixie for the RFC and its encouragements. Thanks
-   to Björn Augustsson  for the xtraceroute program 
-   <http://www.dtek.chalmers.se/~d3august/xt/>. Thanks to Roland
-   Dirlewanger for extensive patching.
-
-
-
-
+   Now hosted at FramaGit https://framagit.org/bortzmeyer/query-loc
